@@ -1,33 +1,24 @@
 <?php
-    $a=12; //en binario 1100;
-    $b=23; //en binario 10111;
-    $A="12"; //en binario 110001110010;
-    $B="23"; //en binario 110010110011;
-    //operador &;
-    print_r($a&$b);
+
+    $langosta = 55;
+    $angula = 80;
+    $caviar = 600;
+
+    /*Crear una estructura lógica para que devuelva cierto si dos de estas variables
+    superen los precios de 50, 70 y 500, y falso en cualquier otro caso. Comprobarlo modificando
+    los valores de las variables y viendo los resultados, subirlo como respuesta.*/
+
+    /*Aclaración: Por ejemplo, se le pondrá a la langosta un valor que supere 50 y a la angula un
+    valor que supere 70. Otro ejemplo: Un valor a la angula que supere 70 y un valor al caviar que
+    supere 500. Solamente quedaría un caso más. Cualquier de ellos valdría. La estructura condicional
+    deberá hacer las comprobaciones necesarias para que en esos casos descritos devuelva VERDADERO, y
+    para el resto de casos devuelva FALSO.*/
+
+    if($langosta > 50 XOR $angula > 70 XOR ($caviar > 400)) {
+        echo "CIERTO";
+    } else {
+        echo "FALSO";
+    }
     echo "\n";
-    print_r($A&$B);
-    echo "\n";
-    //operador |;
-    print_r($a|$b);
-    echo "\n";
-    print_r($A|$B);
-    echo "\n";
-    //operador ^;
-    print_r($a^$b);
-    print_r($A^$B);
-    echo "\n";
-    //repite el código para el operador <<;
-    echo "Codigo usando el operador '<<':" . "\n";
-    print_r($a<<$b) . "desplaza los bits del valor $a, $b posiciones a la izquierda" . "\n";
-    print_r($A<<$B) . "\n";
-    echo "\n";
-    //repite el código para el operador >>;
-    echo "Codigo usando el operador '>>':" . "\n";
-    print_r($a>>$b) . "Desplaza los bits del valor $a, $b posiciones a la derecha" . "\n";
-    print_r($A>>$B) . "\n";
-    echo "\n";
-    //operador ~
-    print_r(~$a);
 
 ?>
